@@ -6,7 +6,7 @@
         <tbody>
 			<tr>
         		<td>
-					<a href="https://github.com/MAZHARMIK/Interview_DS_Algo/blob/master/Greedy/Boats%20to%20Save%20People.cpp">Boats to Save People (Leetcode-881)</a>
+					<a href="https://github.com/Ankesh-21/__DSA/blob/Concept/LeetCode-Daily/Greedy/Minimum%20Deletions%20to%20Make%20String%20K-Special.py">Minimum Deletions to Make String K-Special (Leetcode-3085)</a>
 				</td>
 			</tr>
         </tbody>
