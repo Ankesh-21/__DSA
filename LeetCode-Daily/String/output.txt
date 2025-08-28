@@ -1,0 +1,8 @@
+A string hash value: 30806
+Current Hash value: 61206
+Current Hash value: 71406
+Current Hash value: 21108
+Current Hash value: 30605
+Current Hash value: 10201
+Current Hash value: 20402
+0
