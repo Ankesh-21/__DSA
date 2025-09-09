@@ -14,22 +14,17 @@ def insertNode(values,ind):
 def maintainCost(root,cost):
     if root == None:
         return 0
-    print(root.val)
-    leftPart = root.val + maintainCost(root.left,cost)
-    rightPart = root.val + maintainCost(root.right,cost)
+    remaining = cost - root.val
+    if remaining < 0:
+        return 0
+    leftPart = maintainCost(root.left,remaining)
+    rightPart = maintainCost(root.right,remaining)
 
-    if leftPart > cost:
-        print(f'leftPart= {leftPart}')
+    if leftPart == 0:
         root.left = None
-        leftPart = 0
-    if rightPart > cost:
-        print(f'rightPart= {rightPart}')
+    if rightPart == 0:
         root.right = None
-        rightPart = 0
-    
-    if leftPart == 0 and rightPart == 0:
-        return root.val
-    return leftPart if leftPart != 0 else rightPart
+    return root.val + max(leftPart , rightPart)
 
 def traverse(root):
     if root == None:
@@ -44,7 +39,7 @@ def solve():
     traverse(root)
     print()
     maintainCost(root,11)
-    # traverse(root)
+    traverse(root)
 if __name__ == '__main__':
     solve()
 # main()
